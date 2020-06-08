@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/relMain_addnewBen"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:layout_marginBottom="@dimen/largePadding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textSize="@dimen/HeaderTextSize"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/bendialogtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mediumPadding"
+        android:layout_marginTop="@dimen/mediumPadding"
+        android:text="Add beneficiary" />
+    <TextView
+        android:id="@+id/close_addBendialg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mediumPadding"
+        android:layout_marginRight="@dimen/mediumPadding"
+        android:drawableRight="@drawable/cloaseiconblack"
+        android:layout_alignParentRight="true" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/lin_addnewBen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/mediumPadding"
+        android:layout_below="@id/close_addBendialg">
+        <EditText
+            android:id="@+id/edtbenFName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:maxLines="1"
+            android:digits="@string/Namevalidation"
+            android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/edtbenLName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:maxLines="1"
+            android:digits="@string/Namevalidation"
+            android:inputType="textPersonName" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4.0">
+                <TextView
+                    android:textSize="@dimen/MediumTextSize"
+                    android:textStyle="bold"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/mediumPadding"
+                    android:text="Gender"
+                    android:layout_weight="0.7" />
+                <TextView
+                    android:textSize="@dimen/MediumTextSize"
+                    android:textStyle="bold"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/mediumPadding"
+                    android:text=":"
+                    android:layout_weight="0.1" />
+                <RadioGroup
+                    android:orientation="horizontal"
+                    android:id="@+id/radGrpGender"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/smallPadding"
+                    android:layout_weight="3.0">
+                    <RadioButton
+                        android:textSize="@dimen/NormalTextSize"
+                        android:textColor="@color/secondary_color"
+                        android:id="@+id/radMale"
+                        android:checked="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/mediumPadding"
+                        android:text="Male" />
+                    <RadioButton
+                        android:textSize="@dimen/NormalTextSize"
+                        android:textColor="@color/secondary_color"
+                        android:id="@+id/radFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/largePadding"
+                android:weightSum="4.0">
+                <TextView
+                    android:textSize="@dimen/MediumTextSize"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/mediumPadding"
+                    android:text="Age"
+                    android:layout_weight="0.7" />
+                <TextView
+                    android:textSize="@dimen/MediumTextSize"
+                    android:textStyle="bold"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/mediumPadding"
+                    android:text=":"
+                    android:layout_weight="0.1" />
+                <EditText
+                    android:id="@+id/edt_age"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:maxLength="3"
+                    android:digits="@string/Mobile_no_validation"
+                    android:layout_weight="1.0"
+                    android:inputType="number" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:id="@+id/btn_addnewBen"
+                android:background="@drawable/button_border"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/largePadding"
+                android:text="ADD" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

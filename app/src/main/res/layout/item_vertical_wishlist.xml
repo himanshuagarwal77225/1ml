@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:weightSum="4"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="#FFE9B423"
+            android:text="feactured"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            />
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/relAddToCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ivThumb"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/all_product"
+                    />
+                <ImageView
+                    android:id="@+id/ivThumbcopy"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/all_product"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txtTitlehorizontal"
+                android:textColor="#000000"
+                android:text="Sri Sri Tattva Chitrakadi Gutika 300mg Tablet 60's"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:gravity="left|center_vertical"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:textColor="#000000"
+                        android:text="MRP:"
+                        android:layout_marginRight="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="2dp"
+                        android:text="@string/Rs"
+                        />
+                    <TextView
+                        android:id="@+id/txtAddPrice"
+                        android:textColor="#000000"
+                        android:text="150.0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:foreground="@drawable/strikethrough_foreground"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtorignalprice"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:text="150.0"
+                    android:gravity="left"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/txtPriceOffer"
+                    android:textColor="#07ab19"
+                    android:gravity="left"
+                    android:textSize="10dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:text="60% Off"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/stock"
+                android:textColor="@color/red"
+                android:text="Out of stock"
+                android:visibility="gone"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/offline"
+                android:textColor="@color/red"
+                android:text="Sellar offline"
+                android:visibility="gone"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txtRemove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawableTint="@color/colorAccent"
+                android:gravity="center_horizontal"
+                android:text="Remove"
+                android:padding="5dp"
+                android:drawableLeft="@drawable/ic_delete"
+                android:layout_gravity="center_horizontal"
+               />
+            <TextView
+                android:id="@+id/txtAddtocart"
+                android:textColor="#000000"
+                android:text="Add"
+                android:drawableLeft="@drawable/ic_cart_smail"
+                android:backgroundTint="@color/colorAccent"
+                android:drawableTint="@color/colorAccent"
+              android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorblack"/>
+
+</LinearLayout>

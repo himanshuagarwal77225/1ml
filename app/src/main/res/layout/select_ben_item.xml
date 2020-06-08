@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+    android:id="@+id/lin_checkben"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/smallPadding"
+    android:layout_marginBottom="@dimen/smallPadding"
+    android:weightSum="10.0">
+    <CheckBox
+        android:textSize="@dimen/MediumTextSize"
+        android:id="@+id/chk_ben"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:text="Tejas (M/24)"
+        android:layout_weight="10.0" />
+</LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="@dimen/smallPadding"
+        android:layout_marginBottom="@dimen/smallPadding"
+        >
+       <TextView
+           android:id="@+id/g"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Gender : "
+           android:layout_alignParentStart="true"
+           android:textStyle="bold"
+           android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/g"
+            android:text="Male "
+            android:layout_marginStart="4dp"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age : "
+            android:layout_toRightOf="@id/m"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/a"
+            android:text="30 "
+            android:layout_marginStart="4dp"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+        <ImageView
+            android:id="@+id/imgEditBen"
+            android:layout_width="wrap_content"
+            android:tint="@color/colorAccent"
+            android:visibility="visible"
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_height="wrap_content"
+            android:src="@drawable/editblack"
+            />
+        <ImageView
+            android:id="@+id/imgDelBen"
+            android:layout_width="wrap_content"
+            android:visibility="visible"
+            android:layout_marginEnd="16dp"
+            android:layout_toStartOf="@id/imgEditBen"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_delete"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

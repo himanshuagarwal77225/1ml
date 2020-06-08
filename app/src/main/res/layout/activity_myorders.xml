@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:background="@color/colorAccent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Ui.LoginPanelActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e4e2e2"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:backgroundTint="@color/colordiffblue"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            <TextView
+                android:id="@+id/title"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/whiteback"
+                android:textSize="20dp"
+                android:text="My wishlist"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imgBtnSearch"
+                    app:srcCompat="@drawable/ic_search_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:onClick="clickFunction"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_filter_state"/>
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/cartRelativeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:paddingRight="3dip">
+
+                    <ImageButton
+                        android:id="@+id/imgBtnCart"
+                        app:srcCompat="@drawable/ic_cart"
+                        android:layout_width="wrap_content"
+                        android:onClick="clickFunction"
+                        android:padding="10dp"
+                        android:background="@drawable/ic_filter_state"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/textNotify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@id/imgBtnCart"
+                        android:layout_alignTop="@id/imgBtnCart"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/notification_circle"
+                        android:gravity="center"
+                        android:minHeight="15dp"
+                        android:minWidth="15dp"
+                        android:text="0"
+                        android:textColor="@color/whiteback"
+                        android:textSize="8sp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:id="@+id/layEmptyWish"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/emptywish"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorblack"
+                android:textStyle="italic"
+                android:padding="@dimen/dimen_10dp"
+                android:text="@string/your_wh_s_empty_n_set_back_add_product_in_cart"
+                android:textSize="18dp" />
+            <Button
+                android:id="@+id/shopnow"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Shop Now"
+                android:paddingLeft="@dimen/dimen_10dp"
+                android:paddingRight="@dimen/dimen_10dp"
+                android:textAllCaps="false"
+                android:textStyle="italic"
+                android:backgroundTint="@color/active_yellow"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:background="@drawable/upload_button"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclevieworders"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+        <LinearLayout
+            android:id="@+id/noresult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="@drawable/empty_search">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Whoops !"
+                android:layout_marginTop="100dp"
+                android:textColor="@color/active_yellow"
+                android:textSize="@dimen/dimen_28dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sorry,but nothing matched your search \n please try some  different keywords  !"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/dimen_16dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

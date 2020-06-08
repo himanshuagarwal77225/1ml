@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:paddingRight="30dp"
+    android:paddingLeft="30dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Ui.LoginPanelActivity">
+
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtUserEContactname"
+                android:hint="@string/edt_emergency_contact_name_hint"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:layout_marginBottom="@dimen/margin_conponent"
+                android:textSize="15dp"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:id="@+id/btnUploadDocument"
+                android:textAllCaps="true"
+                android:text="UPDATE"
+                android:background="@color/colorPrimary"
+                android:layout_marginBottom="@dimen/margin_conponent"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/whiteback"
+                android:layout_height="wrap_content"
+                android:onClick="clickFunction"
+                />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

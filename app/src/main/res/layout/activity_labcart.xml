@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#D9E8EB"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="@color/colordiffblue"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="Lab Cart">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Lab Cart"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linCart"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="4dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:paddingBottom="@dimen/mediumPadding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="@color/transparent"
+            android:cacheColorHint="#00000000"
+            android:layout_alignParentTop="true" />
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/linNoResult"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <TextView
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="@dimen/HeaderTextSize"
+                android:textColor="@color/tertiary_color"
+                android:id="@+id/txtNoResult"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Cart is empty!"
+                android:layout_centerInParent="true" />
+            <TextView
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textSize="@dimen/NormalTextSize1"
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Care about your health?" />
+            <Button
+                android:textSize="@dimen/NormalTextSize"
+                android:textColor="@color/button_text"
+                android:id="@+id/btnNoTests"
+                android:background="@drawable/button_border"
+                android:paddingLeft="@dimen/mediumPadding"
+                android:paddingRight="@dimen/mediumPadding"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/largerPadding11"
+                android:layout_marginTop="@dimen/smallPadding"
+                android:text="ADD TESTS"
+                android:layout_alignParentBottom="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/linCart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:paddingLeft="@dimen/mediumPadding"
+            android:paddingRight="@dimen/mediumPadding"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp">
+            <TextView
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="@dimen/subHeadSize"
+                android:textStyle="bold"
+                android:id="@+id/txt_add_moretest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smallPadding"
+                android:text="@string/addmoretest"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relPricing"
+            android:padding="@dimen/mediumPadding"
+            android:visibility="visible"
+            android:background="@color/white"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="@dimen/MediumTextSize"
+                android:textColor="@color/secondary_color"
+                android:id="@+id/txtPricingDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Price details" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/totalamount"
+            android:visibility="visible"
+            android:background="@color/white"
+            android:paddingEnd="@dimen/mediumPadding"
+            android:paddingStart="@dimen/mediumPadding"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="@dimen/NormalTextSize"
+                android:textColor="@color/tertiary_color"
+                android:id="@+id/tv_totalAmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Amount" />
+            <TextView
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="@dimen/NormalTextSize"
+                android:textColor="@color/tertiary_color"
+                android:id="@+id/tv_bencount1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smallPadding"
+                android:text="(Ben Count : x1)"
+                android:layout_toRightOf="@id/tv_totalAmt" />
+            <TextView
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="@dimen/NormalTextSize"
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/txtActPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Rs. 0/-"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/totalSaving"
+            android:layout_width="fill_parent"
+            android:paddingEnd="@dimen/mediumPadding"
+            android:paddingStart="@dimen/mediumPadding"
+            android:visibility="visible"
+            android:background="@color/white"
+            android:layout_height="fill_parent"
+            >
+            <TextView
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="@dimen/NormalTextSize"
+                android:textColor="@color/tertiary_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Savings" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/mediumPadding"
+                android:text=" - "
+                android:layout_toLeftOf="@id/totalSavingamount" />
+            <TextView android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="@dimen/NormalTextSize"
+                android:textColor="@color/red"
+                android:id="@+id/totalSavingamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 0/-"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:paddingStart="@dimen/smallPadding"
+
+            android:weightSum="2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="@dimen/subHeadSize"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/txtFinalPrice"
+                android:text="Rs. 20/-"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                />
+            <Button
+                android:textSize="@dimen/subHeadSize"
+                android:textColor="@color/white"
+                android:id="@+id/btnConfirm"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/ButtonSize"
+                android:layout_marginTop="@dimen/smallPadding"
+                android:text="CONTINUE"
+                android:layout_alignParentBottom="true" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

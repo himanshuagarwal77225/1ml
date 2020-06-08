@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+<ImageView
+    android:id="@+id/imageUrl"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:src="@drawable/logo11"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/test_name_labcart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Name"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/colorAccent"
+                    />
+                <ImageView
+                    android:id="@+id/delete"
+                    android:layout_width="32dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_height="32dp"
+                    app:srcCompat="@drawable/ic_delete"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MRP :"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"/>
+                <TextView
+                    android:id="@+id/test_strike_labcart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_strike_1"
+                    android:textSize="17sp"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="4dp" />
+                <TextView
+                    android:id="@+id/test_price_labcart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹ 720"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/mdtp_accent_color"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/test_discount_labcart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save 20% OFF"
+                android:textSize="17sp"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginEnd="4dp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/plan_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Test Plan   "
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="2dp"
+                android:drawableTint="@color/colorAccent"
+                android:drawableEnd="@drawable/ic_info_black"
+                android:textColor="@color/colorAccent"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Plan"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/colorAccent"
+            />
+        <ImageView
+            android:id="@+id/plan_cancel"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/cb_payu_close_grey"
+            android:layout_alignParentEnd="true"
+            />
+    </RelativeLayout>
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textSize="12sp"
+            android:buttonTint="@color/colorAccent"
+            android:singleLine="true"
+            android:text="Monthly" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:buttonTint="@color/colorAccent"
+            android:text="Quaterly" />
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:buttonTint="@color/colorAccent"
+            android:singleLine="true"
+            android:text="Halfyearly" />
+
+        <RadioButton
+            android:id="@+id/radio4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:buttonTint="@color/colorAccent"
+            android:text="Annualy" />
+    </RadioGroup>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+</LinearLayout>

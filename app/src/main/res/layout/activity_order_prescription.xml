@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Ui.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_10dp"
+                android:text="CHOOSE AN OPTION"
+                android:textColor="@color/colorblack"
+                android:textSize="15dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:padding="@dimen/dimen_10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/dimen_5dp"
+                app:cardElevation="@dimen/dimen_10dp">
+
+                <RadioGroup
+                    android:id="@+id/radGroupChooseOption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dimen_10dp">
+
+                    <RadioButton
+                        android:id="@+id/radorderall"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:padding="@dimen/dimen_10dp"
+                        android:text="Order everything as per prescription" />
+
+                    <LinearLayout
+                        android:id="@+id/layorderall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radduration"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="For " />
+
+                            <EditText
+                                android:id="@+id/edtDays"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:maxLines="1"
+                                android:text="30"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" days" />
+                        </LinearLayout>
+
+
+                        <RadioButton
+                            android:id="@+id/raddoctor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Duration or quantity of medicines as writter by doctor" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/colorblack" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorblack" />
+
+                    <RadioButton
+                        android:id="@+id/radletmespecifiy"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_50dp"
+                        android:padding="@dimen/dimen_10dp"
+                        android:text="Let me specify medicines and quantity" />
+
+                    <EditText
+                        android:id="@+id/edtSpicifiy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:hint="Medicine(s) name,quantity/duration"
+                        android:maxLines="2"
+                        android:textSize="10dp"
+                        android:visibility="gone" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorblack" />
+
+                    <RadioButton
+                        android:id="@+id/raCallme"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:padding="@dimen/dimen_10dp"
+                        android:text="Call me for details" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorblack" />
+                </RadioGroup>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_10dp">
+
+                <include layout="@layout/secuirt" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent"
+            android:text="Continue"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rel_main"
+    android:paddingLeft="@dimen/TopMargin5"
+    android:paddingRight="@dimen/TopMargin5"
+    android:paddingBottom="@dimen/TopMargin5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:textSize="@dimen/HeaderTextSize"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/dialgheader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mediumPadding"
+        android:layout_marginTop="@dimen/mediumPadding"
+        android:layout_marginRight="@dimen/TopMargin1"
+        android:layout_marginBottom="@dimen/largePadding"
+        android:text="Add Address" />
+    <TextView
+        android:id="@+id/close_dialg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/smallPadding11"
+        android:layout_marginRight="@dimen/mediumPadding"
+        android:drawableRight="@drawable/cloaseiconblack"
+        android:layout_alignParentRight="true" />
+    <LinearLayout
+        android:gravity="start"
+        android:orientation="vertical"
+        android:id="@+id/lin_editaddmain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialgheader">
+        <EditText
+            android:textSize="@dimen/MediumTextSize"
+            android:textColor="@color/secondary_color"
+            android:textColorHint="@color/tertiary_color"
+            android:id="@+id/edtFlatno"
+            android:background="@drawable/border"
+            android:padding="@dimen/mediumPadding"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/verysmallpadding1"
+            android:hint="Flat no / house no *"
+            android:digits="@string/addressvalidation"
+            android:inputType="textPostalAddress" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:textSize="@dimen/MediumTextSize"
+                android:textColor="@color/secondary_color"
+                android:textColorHint="@color/tertiary_color"
+                android:gravity="center|left|top"
+                android:id="@+id/edtAddress"
+                android:background="@drawable/border"
+                android:paddingLeft="@dimen/mediumPadding"
+                android:paddingTop="@dimen/mediumPadding"
+                android:paddingRight="@dimen/dp_40"
+                android:paddingBottom="@dimen/mediumPadding"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/verysmallpadding1"
+                android:hint="Address*"
+                android:lines="2"
+                android:ems="10"
+                android:digits="@string/addressvalidation"
+                android:inputType="textMultiLine|textNoSuggestions" />
+            <ImageView
+                android:id="@+id/locationpickerForEditAddress"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_35"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_location_on_black_24dp" />
+        </RelativeLayout>
+        <EditText
+            android:textSize="@dimen/MediumTextSize"
+            android:textColor="@color/secondary_color"
+            android:textColorHint="@color/tertiary_color"
+            android:gravity="center|left|top"
+            android:id="@+id/edtState"
+            android:background="@drawable/border"
+            android:padding="@dimen/mediumPadding"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/verysmallpadding1"
+            android:hint="State*"
+            android:lines="1"
+            android:ems="10"
+            android:digits="@string/Namevalidation"
+            android:inputType="textMultiLine|textNoSuggestions" />
+        <EditText
+            android:textSize="@dimen/MediumTextSize"
+            android:textColor="@color/secondary_color"
+            android:textColorHint="@color/tertiary_color"
+            android:gravity="center|left|top"
+            android:id="@+id/edtCity"
+            android:background="@drawable/border"
+            android:padding="@dimen/mediumPadding"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/verysmallpadding1"
+            android:hint="City*"
+            android:lines="1"
+            android:ems="10"
+            android:digits="@string/Namevalidation"
+            android:inputType="textMultiLine|textNoSuggestions" />
+        <EditText
+            android:textSize="@dimen/MediumTextSize"
+            android:textColor="@color/secondary_color"
+            android:textColorHint="@color/tertiary_color"
+            android:id="@+id/edtPincode"
+            android:background="@drawable/border"
+            android:padding="@dimen/mediumPadding"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/verysmallpadding1"
+            android:hint="Pincode*"
+            android:ems="10"
+            android:maxLength="6"
+            android:digits="@string/Mobile_no_validation"
+            android:inputType="number" />
+    </LinearLayout>
+    <Button
+        android:textColor="@color/white"
+        android:id="@+id/btnSaveAddress"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/smallPadding"
+        android:text="Add"
+        android:layout_below="@id/lin_editaddmain"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

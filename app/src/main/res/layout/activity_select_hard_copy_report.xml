@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#D9E8EB"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="@color/colordiffblue"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="Cart">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Report"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <ImageButton
+                    android:id="@+id/imgBtnSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/ic_filter_state"
+                    android:onClick="clickFunction"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_search_black_24dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:textSize="@dimen/HeaderTextSize"
+        android:textColor="@color/black"
+        android:id="@+id/HCR_title"
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/largePadding"
+        android:paddingBottom="@dimen/largePadding"
+        android:text="Select Report Type "
+        android:layout_below="@id/toolbar" />
+    <RadioGroup
+        android:id="@+id/Radiogroup_hc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:layout_below="@id/HCR_title">
+        <RelativeLayout
+            android:id="@+id/rel_rd_HC_no"
+            android:background="@drawable/border"
+            android:layout_width="fill_parent"
+            android:backgroundTint="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp">
+            <RadioButton
+                android:textColor="@color/black"
+                android:id="@+id/rd_HC_no"
+                android:checked="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Softcopy" />
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 0/-  "
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rel_rd_HC_yes"
+            android:background="@drawable/border"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="4dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:textColor="@color/black"
+                android:id="@+id/rd_HC_yes"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Hardcopy + Softcopy " />
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 75/-"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/rel_proceed"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:textSize="@dimen/HeaderTextSize"
+            android:textColor="@color/black"
+            android:id="@+id/tv_subTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/smallPadding"
+            android:text="Total : 0 Rs/-"
+            android:background="@color/white"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+        <Button
+            android:textSize="@dimen/LargerTextSize"
+            android:textColor="@color/white"
+            android:id="@+id/btn_Confirm"
+            android:background="@color/colorPrimary"
+            android:paddingLeft="@dimen/largePadding"
+            android:paddingRight="@dimen/largePadding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROCEED"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

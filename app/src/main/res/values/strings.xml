@@ -1,0 +1,497 @@
+<resources>
+    <string name="app_name">1ml</string>
+    <string name="title_activity_dashbord">Dashbord</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="ab_list_title">manoharfadf</string>
+
+    <string name="btn_referearntitle_text">Refer friends &amp; Earn</string>
+    <string name="btn_proceed_text">PROCEED</string>
+
+    <string name="Rs">\u20B9</string>
+    <string name="edt_otp">OTP</string>
+    <string name="mandatory_field1">Field with <font color="#EE0000">*</font> are Mandatory</string>
+
+    <string name="search_hint">search medicine</string>
+    <string name="By_thyrocare"><u><i>By Thyrocare Lab</i></u></string>
+    <string name="log_out_user">Log out user</string>
+    <string name="search_hint_q">Search here</string>
+    <string name="default_notification_channel_id">default</string>
+    <string name="edt_username_hint">Full name</string>
+    <string name="edt_email_hint">Email</string>
+    <string name="edt_phone_hint">Phone</string>
+    <string name="edt_address_hint">Address</string>
+    <string name="edt_weight_hint">Weight</string>
+    <string name="edt_height_hint">height</string>
+    <string name="edt_emergency_contact_no_hint">Emergency Contact Number</string>
+    <string name="edt_emergency_contact_name_hint">Emergency Contact Name</string>
+
+    <string name="edt_dob_hint">Date OF Birth</string>
+    <string name="edt_city_hint">City</string>
+    <string name="your_string"><u>have a referral code ?</u></string>
+    <string name="your_refralcode">referral code</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="menu_main_myaccount">MY ACCOUNT</string>
+    <string name="menu_referandearn">Refer &amp; Earn</string>
+    <string name="menu_myprofile">My Profile</string>
+
+    <string name="menu_main_sercices">SERVICES</string>
+    <string name="menu_nearstorelocator">Nearest Store Locator</string>
+    <string name="menu_blood">Nearest Blood Bank</string>
+    <string name="menu_ambulance">Nearest Ambulance</string>
+    <string name="menu_doctor">Nearest Doctor</string>
+    <string name="menu_lab">Nearest Lab</string>
+    <string name="menu_imagecenter">Nearest Imaging Center</string>
+
+    <string name="menu_main_medicines">MEDICINES</string>
+    <string name="menu_findmedicine">Find Medicine</string>
+    <string name="menu_substitutes">Find Substitutes</string>
+    <string name="menu_prescription">Order with Prescription</string>
+    <string name="menu_pillreminder">Pill Reminder</string>
+
+    <string name="menu_main_doctor">DOCTOR</string>
+    <string name="menu_finddoctor">Find Doctor</string>
+    <string name="menu_appointment">My Appointment</string>
+    <string name="menu_doctorchat">Doctor with Chat</string>
+    <string name="menu_consultclinic">Consult on Clinic</string>
+    <string name="menu_textconsult">Chat Consult</string>
+    <string name="menu_phoneconsult">Phone Consult</string>
+    <string name="menu_videoconsult">Video Consult</string>
+    <string name="menu_emargencyconsult">Emergency Consult</string>
+
+    <string name="menu_main_tabtest">LAB TEST</string>
+    <string name="menu_booktabtest">Book Lab Test</string>
+    <string name="menu_bookimaging">Book X-Ray</string>
+
+    <string name="menu_treatments">Treatments</string>
+    <string name="menu_prescriptions">Prescriptions</string>
+    <string name="menu_Documents">Documents</string>
+
+    <string name="menu_main_others">OTHERS</string>
+    <string name="menu_needhelp">Need Help?</string>
+    <string name="menu_setting">Setting</string>
+    <string name="menu_feedback">Feedback</string>
+    <string name="menu_storeoffers">Store Offers</string>
+    <string name="menu_privacypolicy">Privacy Policy</string>
+    <string name="menu_returncancellation">Return &amp; Cancellation</string>
+    <string name="menu_requestproduct">Request Product</string>
+    <string name="menu_reportissue">Report Issue</string>
+    <string name="menu_changelocator">Change Locator</string>
+    <string name="menu_mycoupons">My Coupons</string>
+    <string name="menu_Notifications">Notifications</string>
+    <string name="menu_howitworks">How it Works</string>
+    <string name="menu_articles">Articles</string>
+    <string name="menu_aboutus">About Us</string>
+    <string name="menu_signout">SIGN OUT</string>
+
+
+    <string name="send_failed">Sending invitations failed</string>
+
+    <string name="text_strike_1"><strike>₹ 900</strike></string>
+    <!--pill reminder-->
+
+    <string name="title_activity_add_reminder">Add Reminder</string>
+    <string name="title_activity_edit_reminder">Edit Reminder</string>
+    <string name="title_activity_licenses">Licenses</string>
+
+    <string name="action_save_reminder">Save</string>
+
+    <string name="no_reminders">Click on the plus button below to begin creating your reminders!</string>
+
+    <!--pill reminder end-->
+
+    <!--Spinner blood group-->
+    <array name="bloodgroup_array">
+        <item>Blood group</item>
+        <item>A+</item>
+        <item>O+</item>
+        <item>B+</item>
+        <item>AB+</item>
+        <item>A-</item>
+        <item>O-</item>
+        <item>B-</item>
+        <item>AB-</item>
+    </array>
+
+    <array name="gender_array">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </array>
+
+
+    <!--Spinner blood group end-->
+
+
+    <!--Spinner blood group-->
+    <array name="marriagestatus_array">
+        <item>Married status</item>
+        <item>Married</item>
+        <item>Unmarried</item>
+    </array>
+    <array name="relation_array">
+        <item>Father</item>
+        <item>Mother</item>
+        <item>Brother</item>
+        <item>Sister</item>
+        <item>Other</item>
+    </array>
+    <array name="help">
+        <item>Your Reason</item>
+        <item>Order Realted Query</item>
+        <item>Payment Realted Issue</item>
+        <item>I receved damaged product</item>
+        <item>How can i do online payment</item>
+        <item>How can i get invoice</item>
+        <item>I receved diffrent medican</item>
+        <item>I want to modity my order</item>
+        <item>I want to change paramacy shop</item>
+        <item>Vendor Realted complain</item>
+        <item>Delivery boy Realted complain</item>
+        <item>How do cancel my order</item>
+        <item>Cashback related issue</item>
+        <item>My order is dealy</item>
+        <item>How to unscribe from promotional email</item>
+        <item><![CDATA[I can\'t find pharmacy shop near me]]></item>
+        <item>What i want to place order emergency medicine</item>
+    </array>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+
+    <array name="relationon">
+        <item>Relation</item>
+        <item>Mother</item>
+        <item>Father</item>
+        <item>Brother</item>
+        <item>Sister</item>
+        <item>Son</item>
+        <item>Daughter</item>
+        <item>Wife</item>
+        <item>Other</item>
+    </array>
+    <array name="type">
+        <item>Select Dose</item>
+        <item>Tablet</item>
+        <item>Drop</item>
+        <item>Capsule</item>
+        <item>Lotion</item>
+        <item>Injection</item>
+        <item>Syrup</item>
+        <item>Tea Spoon</item>
+        <item>Gel</item>
+        <item>Infusion</item>
+        <item>Solution</item>
+        <item>Inhaler</item>
+        <item>Patch</item>
+        <item>Buccal</item>
+        <item>Suspension</item>
+        <item>Spray</item>
+        <item>Cream</item>
+        <item>Powder</item>
+    </array>
+    <string name="title_activity_maps_near_store">Map</string>
+    <!--Spinner blood group end-->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="whishlist">Wishlist</string>
+    <string name="your_cart_s_empty_n_set_back_add_product_in_cart">Your Cart\'s empty </string>
+    <string name="your_wh_s_empty_n_set_back_add_product_in_cart">Your Wishlist\'s empty \n add product in Whishlist</string>
+    <string name="look_like_you_haven_t_added_any_product_in_your_cart_yet">look Like You haven\'t added any \n product in your cart yet.</string>
+    <string name="your_order_succesfully_placed_thanks_for_using_1ml_services">Your Order has been successfully Placed.\nThanks for using 1ml healthcare Services</string>
+    <string name="oneline">*Never lose the digital copy of your prescription .it will be with you wherever you go.</string>
+    <string name="second_line">* Is your prescription hard to understand? 1ml vendor will help you in placing your order.</string>
+    <string name="third_line">* Details from your prescription are not shared with any third party </string>
+    <string name="four_line">* Government regulations require a prescription for ordering some medicines or tests</string>
+    <string name="share" />
+    <string name="bookmarak">bookmark</string>
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_capital_off">OFF</string>
+    <string name="abc_capital_on">ON</string>
+    <string name="abc_search_hint">Searchâ€¦</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_query">Search query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="action_settings">Settings</string>
+    <string name="address1">Address <font color="#EE0000">*</font></string>
+    <string name="addressvalidation">abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890,./-</string>
+    <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
+    <string name="cb_ac_debited_twice">* Your account may be debited twice if you retry.</string>
+    <string name="cb_approve_otp">Approve</string>
+    <string name="cb_authenticate_with">Select an option for Faster Payment</string>
+    <string name="cb_b_cancel">Cancel</string>
+    <string name="cb_bank_logo">Bank LOGO</string>
+    <string name="cb_bank_page_loading">Please wait. Bank page is loading..</string>
+    <string name="cb_btn_action">btn_action</string>
+    <string name="cb_btn_text">btn_text</string>
+    <string name="cb_button">Button</string>
+    <string name="cb_cancel">cancel</string>
+    <string name="cb_cancel_transaction">Cancel Transaction</string>
+    <string name="cb_card_not_registered_with_pin">Your card has not been registered for PIN yet. Do you want to continue with PIN?</string>
+    <string name="cb_catchAll_success_msg">catchAllSuccessMsg</string>
+    <string name="cb_check_visibility_cajs">checkVisibilityCatchAllJSCall</string>
+    <string name="cb_checkbox">checkbox</string>
+    <string name="cb_choose">choose</string>
+    <string name="cb_confirm_transaction">Confirm Transaction</string>
+    <string name="cb_detect_bank">detectBank</string>
+    <string name="cb_detect_otp">detectOtp</string>
+    <string name="cb_enter_caps_otp">Enter OTP</string>
+    <string name="cb_enter_manually">Enter OTP Manually</string>
+    <string name="cb_enter_otp">enterOTP</string>
+    <string name="cb_enter_otp_c">Enter OTP</string>
+    <string name="cb_enter_pin">enterPIN</string>
+    <string name="cb_error">error</string>
+    <string name="cb_error_title">ERROR_TITLE</string>
+    <string name="cb_fill_otp">fillOTP</string>
+    <string name="cb_find_new_otp">findNewOtp</string>
+    <string name="cb_find_otp">findOtp</string>
+    <string name="cb_hide">hide</string>
+    <string name="cb_incorrect_OTP_2">incorrectOTP</string>
+    <string name="cb_incorrect_otp_e">Incorrect OTP!</string>
+    <string name="cb_incorrect_password">Incorrect Password</string>
+    <string name="cb_incorrect_pin">incorrectPIN</string>
+    <string name="cb_init">init</string>
+    <string name="cb_nb_image">net banking image</string>
+    <string name="cb_no_internet">NO INTERNET CONNECTIVITY</string>
+    <string name="cb_no_internet_error">Oops.. something bad happened</string>
+    <string name="cb_otp">otp</string>
+    <string name="cb_otp_received">OTP Received</string>
+    <string name="cb_password">PASSWORD</string>
+    <string name="cb_password_value">Password</string>
+    <string name="cb_payu_icon">PayU icon</string>
+    <string name="cb_payu_response">payu_response</string>
+    <string name="cb_payu_review_order">Review Order</string>
+    <string name="cb_pin">pin</string>
+    <string name="cb_please_wait">Please Wait</string>
+    <string name="cb_populate_user_id">populate_user_id</string>
+    <string name="cb_powered_by">Powered by</string>
+    <string name="cb_process_otp">process_otp</string>
+    <string name="cb_process_request">Processing Your Request</string>
+    <string name="cb_pwd_btn">pwd_btn</string>
+    <string name="cb_receive_sms">Did you receive a SMS from your bank?</string>
+    <string name="cb_regen_otp">regenerate_otp</string>
+    <string name="cb_regenerate">regenerate</string>
+    <string name="cb_regenerate_otp">Regenerate OTP</string>
+    <string name="cb_regenerate_otp_text">It is taking long.You mayâ€¦</string>
+    <string name="cb_register">register</string>
+    <string name="cb_register_for_pin">REGISTER FOR PIN</string>
+    <string name="cb_register_option">registerOption</string>
+    <string name="cb_registeration_detail">Enter your registration details</string>
+    <string name="cb_remember_user">Remember User ID</string>
+    <string name="cb_result">result</string>
+    <string name="cb_resuming_transaction">Resuming transaction please wait</string>
+    <string name="cb_retry">retryâ€¦</string>
+    <string name="cb_retry_otp">retryOTP</string>
+    <string name="cb_retry_restart">Or you can retry now to restart your transaction.</string>
+    <string name="cb_retry_transaction">Retry Now</string>
+    <string name="cb_review_order">Review Order</string>
+    <string name="cb_show_password">Show password</string>
+    <string name="cb_skip_screen">skipScreen</string>
+    <string name="cb_slow_internet_confirmation">Due to slower internet on your mobile device, we were unable to receive a confirmation from the bank.</string>
+    <string name="cb_slownetwork_status">You are on a slow network that may have caused this transaction to fail. We will notify you when your network is ready to process the transaction.</string>
+    <string name="cb_sms_otp">SMS OTP</string>
+    <string name="cb_snooze">Snooze</string>
+    <string name="cb_snooze_cookie">Cookie</string>
+    <string name="cb_snooze_network_down_message">"We were not able to detect a better network to resume the transaction.
+You may retry in a few minutes."</string>
+    <string name="cb_snooze_network_error">Network Error</string>
+    <string name="cb_snooze_payuid">PAYUID</string>
+    <string name="cb_snooze_phpsessid">PHPSESSID</string>
+    <string name="cb_snooze_retry_anyway">RETRY ANYWAY</string>
+    <string name="cb_snooze_slow_user_warning">Your session is about to expire. Please complete the transaction quickly to avoid failure.</string>
+    <string name="cb_snooze_slow_user_warning_header">Finish Transaction</string>
+    <string name="cb_snooze_try_later">TRY LATER</string>
+    <string name="cb_snooze_verify_api_status">api_status</string>
+    <string name="cb_toggle_field">toggleField</string>
+    <string name="cb_top_arrow">CB arrow</string>
+    <string name="cb_transaction_failed">It seems the bank did not recognize the transaction. You may contact the bank/ merchant for more details.</string>
+    <string name="cb_transaction_failed_debited">Or you can retry now to restart your transaction.</string>
+    <string name="cb_transaction_failed_retry">Or you can retry now to restart your transaction.</string>
+    <string name="cb_transaction_failed_title">Transaction not confirmed</string>
+    <string name="cb_transaction_paused">Transaction Paused</string>
+    <string name="cb_transaction_state_unknown">Transaction State Unknown</string>
+    <string name="cb_transaction_status">Please wait while we confirm this transaction from the bank. We will notify you once the bank confirms the status of your transaction.</string>
+    <string name="cb_transaction_success_msg">We have verified the transaction with the bank. You will now be redirected to the merchant application.</string>
+    <string name="cb_transaction_sucess">Transaction successful!</string>
+    <string name="cb_transaction_verified">Transaction Verified</string>
+    <string name="cb_try_later">Try Later?</string>
+    <string name="cb_use_sms_otp">USE SMS OTP</string>
+    <string name="cb_user_input_confirm_transaction">confirm_transaction</string>
+    <string name="cb_verify_message_received">verify_message_received</string>
+    <string name="cb_waiting_for_otp">"Sit back and relax while we
+ check OTP"</string>
+    <string name="character_counter_pattern">%1$d / %2$d</string>
+    <string name="city">City <font color="#EE0000">*</font></string>
+    <string name="common_google_play_services_enable_button">Enable</string>
+    <string name="common_google_play_services_enable_text">"%1$s won't work unless you enable Google Play services."</string>
+    <string name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string name="common_google_play_services_install_button">Install</string>
+    <string name="common_google_play_services_install_text">"%1$s won't run without Google Play services, which are missing from your device."</string>
+    <string name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play services availability</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_unknown_issue">%1$s is having trouble with Google Play services. Please try again.</string>
+    <string name="common_google_play_services_unsupported_text">"%1$s won't run without Google Play services, which are not supported by your device."</string>
+    <string name="common_google_play_services_update_button">Update</string>
+    <string name="common_google_play_services_update_text">"%1$s won't run unless you update Google Play services."</string>
+    <string name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_google_play_services_updating_text">"%1$s won't run without Google Play services, which are currently updating."</string>
+    <string name="common_google_play_services_wear_update_text">New version of Google Play services needed. It will update itself shortly.</string>
+    <string name="common_open_on_phone">Open on phone</string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="cvv">CVV</string>
+    <string name="date_of_birth">Date of Birth <font color="#EE0000">*</font></string>
+    <string name="email">Email <font color="#EE0000">*</font></string>
+    <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
+    <string name="first_name">First Name <font color="#EE0000">*</font></string>
+    <string name="gender">Gender <font color="#EE0000">*</font></string>
+    <string name="hello_world">Hello world!</string>
+    <string name="internet_restored">Internet Restored</string>
+    <string name="last_name">Last Name <font color="#EE0000">*</font></string>
+    <string name="mobile_number">Mobile Number <font color="#EE0000">*</font></string>
+    <string name="order_information">Order Information</string>
+    <string name="password">Password</string>
+    <string name="password_toggle_content_description">Toggle password visibility</string>
+    <string name="path_password_eye">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
+    <string name="path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
+    <string name="pincode">Pincode <font color="#EE0000">*</font></string>
+    <string name="place_autocomplete_clear_button">Clear search</string>
+    <string name="Mobile_no_validation">1234567890</string>
+    <string name="Namevalidation">abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="place_autocomplete_search_hint">Search</string>
+    <string name="redirect_back_to_merchant">Redirecting you back to merchant...</string>
+    <string name="relation">Relation <font color="#EE0000">*</font></string>
+    <string name="resuming_your_transaction">Resuming your transaction...</string>
+    <string name="search_menu_title">Search</string>
+    <string name="sp_internet_restored_ttl">sp_internet_restored_ttl</string>
+    <string name="state">State <font color="#EE0000">*</font></string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="status_unknown_redirect_to_merchant">The bank could not verify the transaction at this time. Redirecting you back to the merchant...</string>
+    <string name="text_or">or</string>
+    <string name="addmoretest"><u><i>Add Test +</i></u></string>
+    <string name="beneficiary_select">You can select <b>Min 1</b> and <b>Max 10</b> beneficiaries</string>
+
+
+     <!--email sent data -->
+    <string name="subject">Thank you for your booking request with 1ml Lab\n</string>
+    <string name="content">Hi %1$s,&lt;br /&gt; &lt;br /&gt;Thank you for choosing 1ml Lab services. &lt;br /&gt;We have received you Order. This is a confirmation email that your order has been successfully received and currently under process by OLP. Our Lab Partner Technician will be assigned prior to 24 hours of your preferred appointment date and time. You will be inform by SMS and Email And technician details will be provided to you in advance by SMS and Email.
+    &lt;br /&gt; &lt;br /&gt;Order Related enquires: - 022-30900000 /41252525 Any Other Quires:-care@1ml.co.in
+    &lt;br /&gt;<b><i>Detail</i></b>
+        &lt;br /&gt; &lt;br /&gt;Order Id : %2$s
+    &lt;br /&gt;Address : %3$s
+    &lt;br /&gt;Product(s) : %4$s
+    &lt;br /&gt;Benificiary(s) : %5$s
+    &lt;br /&gt;Email : %6$s
+    &lt;br /&gt;Fasting Required : %7$s
+    &lt;br /&gt;Phone : %8$s
+    &lt;br /&gt;Appointment : %9$s
+    &lt;br /&gt;Hard Copy : %10$s
+    &lt;br /&gt;Booking Time : %11$s
+    &lt;br /&gt;<b>Total Amount</b> : <b>%12$s</b>
+    &lt;br /&gt; &lt;br /&gt;Thank You,
+    &lt;br /&gt;1ml Team</string>
+
+</resources>

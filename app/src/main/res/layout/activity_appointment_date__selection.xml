@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#D9E8EB"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="@color/colordiffblue"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="Cart">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Appointment Slot"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <ImageButton
+                    android:id="@+id/imgBtnSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/ic_filter_state"
+                    android:onClick="clickFunction"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_search_black_24dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:textSize="@dimen/HeaderTextSize"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/appt_title"
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:paddingTop="8dp"
+        android:text="Choose appointment slot"
+        android:layout_below="@id/toolbar" />
+    <RelativeLayout
+        android:id="@+id/rel_calender"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appt_title"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+        <devs.mulham.horizontalcalendar.HorizontalCalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_layout"
+            app:selectedDateBackground="@color/colorPrimaryDark"
+            app:textColorSelected="@color/white"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/div_color"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginTop="@dimen/smallPadding"
+        android:layout_below="@id/rel_calender" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/rel_proceed"
+        android:layout_below="@id/rel_calender">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_AppointDates"
+            android:layout_width="fill_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/smallPadding" />
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tv_notimeslotAvailable"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/TopMargin"
+            android:text="No time slots available for selected date.Please select another date."
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rel_proceed"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:textSize="@dimen/HeaderTextSize"
+
+            android:textColor="@color/black"
+            android:id="@+id/tv_subTotal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/smallPadding"
+            android:text="Total : 0 Rs/-"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+        <Button
+            android:textSize="@dimen/LargerTextSize"
+            android:textColor="@color/white"
+            android:id="@+id/btn_Confirm"
+            android:background="@color/colorPrimaryDark"
+            android:paddingLeft="@dimen/largePadding"
+            android:paddingRight="@dimen/largePadding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROCEED"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

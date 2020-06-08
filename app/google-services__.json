@@ -1,0 +1,58 @@
+{
+  "project_info": {
+    "project_number": "1019150195024",
+    "firebase_url": "https://oneml-1d8c7.firebaseio.com",
+    "project_id": "oneml-1d8c7",
+    "storage_bucket": "oneml-1d8c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019150195024:android:541de6805c2644ce",
+        "android_client_info": {
+          "package_name": "com.medical.product"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019150195024-s8n0e5ta2145q19qviup0rhegvnqhi6d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.medical.product",
+            "certificate_hash": "483226fb9978cdbf93158d696a7bcf6677ab04b1"
+          }
+        },
+        {
+          "client_id": "1019150195024-dpbk4ma99javqsufam7nd76nnbsnjvf4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7-UHeED7dtxZUo9rLlAp3DvJ8SM6WtRQ"
+        },
+        {
+          "current_key": "AIzaSyDGPklebV5wd-JqqZ75q8t8J_k5a-6tYh0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1019150195024-dpbk4ma99javqsufam7nd76nnbsnjvf4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

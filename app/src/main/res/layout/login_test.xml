@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:background="@drawable/main_bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Ui.LoginPanelActivity">
+
+        <ImageView
+            android:id="@+id/mllogo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="@dimen/dimen_50dp"
+            android:background="@drawable/circle_shape"
+            android:backgroundTint="@color/white"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="32dp"
+            android:src="@drawable/logo11"
+            />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+       android:layout_marginTop="270dp"
+        android:id="@+id/textt"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_filter_state"
+        android:text="Welcome to"
+        android:textColor="#17ADA1"
+        android:textScaleX="1.1"
+        android:textSize="@dimen/dimen_14sp"
+        />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_filter_state"
+        android:text="1ml "
+        android:textColor="#17ADA1"
+        android:textSize="@dimen/dimen_24sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_filter_state"
+        android:text="h e a l t h c a r e"
+        android:textScaleX="1"
+        android:textColor="@color/colorblack"
+        android:textSize="@dimen/dimen_24sp"
+        android:textStyle="bold" />
+        </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_filter_state"
+        android:text="Please Sign in to Continue"
+        android:textColor="#17ADA1"
+        android:singleLine="true"
+        android:textScaleX="1.1"
+        android:textSize="@dimen/dimen_14sp"
+         />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutforedit"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textt"
+        android:layout_marginEnd="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp">
+
+                <EditText
+                    android:id="@+id/edtphoneemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_conponent"
+                    android:drawableLeft="@drawable/phone_icon"
+                    android:drawablePadding="10dp"
+                    android:hint="Enter Mobile Number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:backgroundTint="#17ADA1"
+                    android:maxLines="1"
+                    android:paddingBottom="16sp"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="14dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New On 1ML ? "
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_14sp" />
+
+            <TextView
+                android:id="@+id/txtCreateAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_filter_state"
+                android:text="Sign Up"
+                android:textColor="#17ADA1"
+                android:textSize="@dimen/dimen_14sp"
+                 />
+        </LinearLayout>
+    <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:elevation="8dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginStart="32dp"
+                    android:background="@drawable/button_getotp"
+                    android:gravity="center"
+
+        android:text="Get OTP"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_16sp" />
+    </LinearLayout>
+    </RelativeLayout>

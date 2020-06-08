@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_10dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="100dp"
+            android:layout_weight=".25" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".75"
+            android:gravity="center|start"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10dp">
+
+            <TextView
+                android:id="@+id/prescaptionoption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call for detail 9929856234"
+                android:textColor="@color/colorblack"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="THU 25 May,2018"
+                android:textColor="@color/colorblack"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/order_satus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Review"
+                android:textColor="@color/green"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorblack" />
+</LinearLayout>

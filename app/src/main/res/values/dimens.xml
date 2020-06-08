@@ -1,0 +1,89 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="margin_conponent">20dp</dimen>
+    <dimen name="size_navorder">10dp</dimen>
+
+
+    <dimen name="ButtonSize">40.0dip</dimen>
+    <dimen name="MediumTextSize">15.0sp</dimen>
+        <dimen name="NormalTextSize">13.0sp</dimen>
+    <dimen name="activity_vertical_margin">16.0dip</dimen>
+    <dimen name="cb_circle_indicator_outer_radius">4.0dip</dimen>
+        <dimen name="cb_circle_indicator_radius">3.0dip</dimen>
+        <dimen name="cb_eight">8.0dip</dimen>
+        <dimen name="cb_eighteen">18.0dip</dimen>
+        <dimen name="cb_four">4.0dip</dimen>
+        <dimen name="cb_fourteenScaled">14.0sp</dimen>
+        <dimen name="cb_sixteen">16.0dip</dimen>
+        <dimen name="cb_sixteenScaled">16.0sp</dimen>
+        <dimen name="cb_thirtysix">36.0dip</dimen>
+        <dimen name="cb_twelve">12.0dip</dimen>
+        <dimen name="cb_twelveScaled">12.0sp</dimen>
+        <dimen name="cb_twentyfour">24.0dip</dimen>
+        <dimen name="circle_indicator_outer_radius">4.0dip</dimen>
+        <dimen name="circle_indicator_radius">3.0dip</dimen>
+    <dimen name="default_circle_indicator_radius">3.0dip</dimen>
+        <dimen name="default_circle_indicator_stroke_width">1.0dip</dimen>
+    <dimen name="eight">8.0dip</dimen>
+        <dimen name="eighteen">18.0dip</dimen>
+    <dimen name="fab_shadow_radius">9.0dip</dimen>
+        <dimen name="fab_size_mini">40.0dip</dimen>
+        <dimen name="fab_size_normal">56.0dip</dimen>
+       <dimen name="four">4.0dip</dimen>
+        <dimen name="fourteen">14.0dip</dimen>
+        <dimen name="fourteenScaled">14.0sp</dimen>
+        <dimen name="fourtytwo">48.0dip</dimen>
+
+    <dimen name="largerPadding11">30.0dip</dimen>
+    <dimen name="mediumPadding">10.0dip</dimen>
+
+    <dimen name="place_autocomplete_button_padding">16.0dip</dimen>
+        <dimen name="place_autocomplete_powered_by_google_height">40.0dip</dimen>
+        <dimen name="place_autocomplete_powered_by_google_start">16.0dip</dimen>
+        <dimen name="place_autocomplete_prediction_height">72.0dip</dimen>
+        <dimen name="place_autocomplete_prediction_horizontal_margin">16.0dip</dimen>
+        <dimen name="place_autocomplete_prediction_primary_text">16.0sp</dimen>
+        <dimen name="place_autocomplete_prediction_secondary_text">14.0sp</dimen>
+        <dimen name="place_autocomplete_progress_horizontal_margin">16.0dip</dimen>
+        <dimen name="place_autocomplete_progress_size">24.0dip</dimen>
+        <dimen name="place_autocomplete_separator_start">72.0dip</dimen>
+    <dimen name="sequence_active_step_padding_bottom">16.0dip</dimen>
+        <dimen name="sequence_active_step_padding_top">12.0dip</dimen>
+        <dimen name="sequence_anchor_max_width">80.0dip</dimen>
+        <dimen name="sequence_anchor_min_width">48.0dip</dimen>
+    <dimen name="sixteen">16.0dip</dimen>
+        <dimen name="sixteenScaled">16.0sp</dimen>
+    <dimen name="smallPadding">5.0dip</dimen>
+    <dimen name="thirtysix">36.0dip</dimen>
+        <dimen name="thirtytwo">32.0dip</dimen>
+
+        <dimen name="twelve">12.0dip</dimen>
+        <dimen name="twelveScaled">12.0sp</dimen>
+        <dimen name="twentyfour">24.0dip</dimen>
+        <dimen name="two">2.0dip</dimen>
+
+
+    <dimen name="HeaderTextSize">20.0sp</dimen>
+    <dimen name="LargerTextSize">18.0sp</dimen>
+    <dimen name="NormalTextSize1">11.0sp</dimen>
+    <dimen name="TopMargin">40.0dip</dimen>
+    <dimen name="TopMargin1">59.0dip</dimen>
+    <dimen name="TopMargin5">20.0dip</dimen>
+    <dimen name="dp_10">10.0dip</dimen>
+    <dimen name="dp_30">30.0dip</dimen>
+    <dimen name="dp_35">35.0dip</dimen>
+    <dimen name="dp_40">40.0dip</dimen>
+    <dimen name="largePadding">15.0dip</dimen>
+    <dimen name="shadow_height">3.0dip</dimen>
+    <dimen name="smallPadding11">7.0dip</dimen>
+    <dimen name="subHeadSize">17.0sp</dimen>
+    <dimen name="verysmallpadding">2.0dip</dimen>
+    <dimen name="verysmallpadding1">3.0dip</dimen>
+    <dimen name="veryverysmallpadding">1.0dip</dimen>
+    <dimen name="watsappSize">14.0sp</dimen>
+
+</resources>

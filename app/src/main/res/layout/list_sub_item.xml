@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="4dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:backgroundTint="@color/cb_grey"
+        android:background="@drawable/ic_arrow_right"/>
+
+    <TextView
+        android:id="@+id/list_sub_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="top"
+         android:textSize="14sp"
+        android:textColor="@android:color/black"
+        tools:text="Sub Test Name" />
+
+</FrameLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Ui.LoginPanelActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Categories"
+                android:textAllCaps="false"
+                android:textColor="@color/colorblack"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/selctecatgior"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Categories"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/colorblack" />
+
+        <LinearLayout
+            android:id="@+id/laybrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_filter_state"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Brands"
+                android:textAllCaps="false"
+                android:textColor="@color/colorblack"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/selectedbrand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Brand"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/colorblack" />
+
+        <LinearLayout
+            android:id="@+id/laydiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_filter_state"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Price"
+                android:textAllCaps="false"
+                android:textColor="@color/colorblack"
+                android:textSize="16dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+            <com.appyvet.materialrangebar.RangeBar
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/rangebar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mrb_pinMaxFont="15sp"
+                app:mrb_pinMinFont="12sp"
+                app:mrb_rangeBarPaddingBottom="30dp"
+                app:mrb_selectorBoundaryColor="@color/red"
+                app:mrb_selectorBoundarySize="5dp"
+                app:mrb_pinTextColor="@color/white"
+                app:mrb_temporaryPins="true"
+                app:mrb_selectorSize="10dp"
+                app:mrb_tickLabelColor="@color/red"
+                app:mrb_tickLabelSelectedColor="@color/red"
+                app:mrb_tickDefaultLabel="label"
+                app:mrb_tickLabelSize="4sp"
+                app:mrb_tickEnd="5000"
+                app:mrb_tickInterval="1"
+                app:mrb_tickStart="0"
+                app:mrb_tickHeight="2dp"
+                app:mrb_pinRadius="14dp"
+                app:mrb_rangeBar_rounded="true"
+                app:mrb_rangeBar="true"
+                app:mrb_tickColor="@color/red"
+                app:mrb_connectingLineColor="@color/gray"
+                app:mrb_selectorColor="@color/red"
+                app:mrb_pinColor="@color/red"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:padding="2dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/min"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="\u20B9 0"
+                    android:textColor="@color/colorblack"
+                    android:layout_weight=".50"
+                    android:gravity="start"/>
+                <TextView
+                    android:id="@+id/max"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="\u20B9 5000"
+                    android:textColor="@color/colorblack"
+                    android:layout_weight=".50"
+                    android:gravity="end"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/colorblack"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/layproduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_filter_state"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Product Form"
+                android:textAllCaps="false"
+                android:textColor="@color/colorblack"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="form"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/laycompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_filter_state"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:padding="@dimen/dimen_10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Company"
+                android:textAllCaps="false"
+                android:textColor="@color/colorblack"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/selectedcompnay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="company"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/colorblack" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/apply"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:background="@color/colorPrimary"
+        android:text="Apply"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/dimen_16dp"
+        android:textColor="@color/white"/>
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:background="@color/colorBackTrans"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Ui.LoginPanelActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/layAddress"
+                        android:visibility="gone"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/addUName"
+                                android:textSize="13dp"
+
+                                android:textColor="@color/colorblack"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/addtype"
+                                android:textSize="10dp"
+                                android:textColor="@color/colorblack"
+                                android:layout_marginLeft="10dp"
+                                android:padding="3dp"
+                                android:background="#e4dfdf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+                        </LinearLayout>
+
+
+
+
+                        <TextView
+                            android:id="@+id/address"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/colorblack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/addemail"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/colorblack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/addPhone"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/colorblack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnChooseAddNewAddress"
+                android:textAllCaps="true"
+                android:background="@color/colorAccent"
+                android:text="Choose/Add new address"
+                android:layout_width="match_parent"
+                android:layout_gravity="bottom"
+                android:textColor="@color/whiteback"
+                android:layout_height="wrap_content"
+                android:onClick="clickFunction"
+                />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnContinue"
+            android:textAllCaps="true"
+            android:text="Continue"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent"
+            android:layout_marginBottom="@dimen/margin_conponent"
+            android:layout_width="match_parent" android:textColor="@color/whiteback"
+            android:layout_height="wrap_content"
+            android:onClick="clickFunction"
+            />
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

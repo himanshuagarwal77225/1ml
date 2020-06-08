@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Ui.LoginPanelActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account Information"
+                android:textColor="@color/colorAccent" />
+
+            <EditText
+                android:id="@+id/edtUsername"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginBottom="@dimen/margin_conponent"
+                android:background="@drawable/edit_background"
+                android:drawableLeft="@drawable/maleicon"
+                android:drawablePadding="@dimen/dimen_10dp"
+                android:drawableTint="@color/colorPrimary"
+                android:hint="@string/edt_username_hint"
+                android:inputType="textCapCharacters"
+                android:textAllCaps="true"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="12dp"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/edtUseremail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="@dimen/margin_conponent"
+                android:background="@drawable/edit_background"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:drawablePadding="010dp"
+                android:drawableTint="@color/colorPrimary"
+                android:hint="@string/edt_email_hint"
+                android:inputType="textVisiblePassword"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="12dp"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/edtUserphone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40dp"
+                android:layout_marginBottom="@dimen/margin_conponent"
+                android:background="@drawable/edit_background"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="@dimen/dimen_10dp"
+                android:drawableTint="@color/colorPrimary"
+                android:hint="@string/edt_phone_hint"
+                android:inputType="phone|textVisiblePassword"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="12dp"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btnverifiyphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clickFunction"
+                android:text="Verify"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address Information"
+                android:textColor="@color/colorAccent" />
+
+            <EditText
+                android:id="@+id/edtUseraddress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginBottom="@dimen/margin_conponent"
+                android:background="@drawable/edit_background"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawableTint="@color/colorPrimary"
+                android:hint="@string/edt_address_hint"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="12dp"
+                android:singleLine="true"
+                android:textSize="15dp" />
+
+
+            <EditText
+                android:id="@+id/edtUserEContactnumber"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="@dimen/margin_conponent"
+                android:background="@drawable/edit_background"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawableTint="@color/colorPrimary"
+                android:hint="@string/edt_emergency_contact_no_hint"
+                android:inputType="phone|textVisiblePassword"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="12dp"
+                android:textSize="15dp" />
+
+
+            <EditText
+                android:id="@+id/edtUserEContactname"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40dp"
+                android:layout_marginBottom="@dimen/margin_conponent"
+                android:background="@drawable/edit_background"
+                android:drawableLeft="@drawable/maleicon"
+                android:drawableTint="@color/colorPrimary"
+                android:hint="@string/edt_emergency_contact_name_hint"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="12dp"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/edtCity"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="@dimen/margin_conponent"
+                android:background="@drawable/edit_background"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawableTint="@color/colorPrimary"
+                android:hint="@string/edt_city_hint"
+                android:maxLines="1"
+                android:inputType="text"
+                android:singleLine="true"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="12dp"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Personal Information"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/txtDateofbirth"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginBottom="@dimen/margin_conponent"
+                android:background="@drawable/edit_background"
+                android:drawableLeft="@drawable/ic_date"
+                android:drawablePadding="@dimen/dimen_10dp"
+                android:drawableTint="@color/colorPrimary"
+                android:hint="@string/edt_dob_hint"
+                android:maxLines="1"
+                android:onClick="clickFunction"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="12dp"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:id="@+id/spinnergender"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/margin_conponent"
+                android:background="@drawable/spinner_background"
+                android:entries="@array/gender_array"
+                android:gravity="center_horizontal"
+                android:overlapAnchor="true"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+
+
+            <Spinner
+                android:id="@+id/spinnerBloodGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/margin_conponent"
+
+                android:background="@drawable/spinner_background"
+                android:entries="@array/bloodgroup_array"
+                android:gravity="center_horizontal"
+                android:overlapAnchor="true"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+
+            <Spinner
+                android:id="@+id/spinnerMarriageStatus"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/margin_conponent"
+                android:background="@drawable/spinner_background"
+                android:entries="@array/marriagestatus_array"
+                android:gravity="center_horizontal"
+                android:overlapAnchor="true"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+
+
+            <EditText
+                android:id="@+id/edtUserHeight"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40dp"
+                android:layout_marginBottom="@dimen/margin_conponent"
+                android:background="@drawable/edit_background"
+                android:drawableLeft="@drawable/ic_height"
+                android:drawablePadding="@dimen/dimen_10dp"
+                android:drawableTint="@color/colorPrimary"
+                android:hint="@string/edt_height_hint"
+                android:inputType="phone|textVisiblePassword"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="12dp"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/edtUserWeight"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40dp"
+                android:layout_marginBottom="@dimen/margin_conponent"
+                android:background="@drawable/edit_background"
+                android:drawableLeft="@drawable/ic_muscle"
+                android:drawablePadding="@dimen/dimen_10dp"
+                android:drawableTint="@color/colorPrimary"
+                android:hint="@string/edt_weight_hint"
+                android:inputType="phone|textVisiblePassword"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="12dp"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/margin_conponent"
+                android:background="@color/colorAccent"
+                android:onClick="clickFunction"
+                android:text="UPDATE"
+                android:textAllCaps="true"
+                android:textColor="@color/whiteback"
+                android:textSize="@dimen/dimen_16dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

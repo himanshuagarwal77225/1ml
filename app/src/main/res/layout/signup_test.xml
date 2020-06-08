@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:background="@drawable/main_bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Ui.LoginPanelActivity">
+
+    <ImageView
+        android:id="@+id/mllogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="@dimen/dimen_50dp"
+        android:background="@drawable/circle_shape"
+        android:backgroundTint="@color/white"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/logo11"
+        />
+
+    <LinearLayout
+        android:id="@+id/layoutforedit"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mllogo"
+        android:layout_marginEnd="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp">
+        <EditText
+            android:id="@+id/edtemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_conponent"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:layout_below="@id/mllogo"
+            android:drawablePadding="10dp"
+            android:hint="Enter Email Address"
+            android:inputType="textWebEmailAddress"
+            android:backgroundTint="#17ADA1"
+            android:maxLines="1"
+            android:paddingBottom="16sp"
+            android:textColorHint="@android:color/black"
+            android:textSize="14dp"/>
+        <EditText
+            android:id="@+id/edtname"
+            android:drawableLeft="@drawable/ic_person"
+            android:hint="Enter Name"
+            android:inputType="text"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_conponent"
+            android:drawablePadding="10dp"
+            android:backgroundTint="#17ADA1"
+            android:paddingBottom="16sp"
+            android:textColorHint="@android:color/black"
+            android:textSize="14dp"/>
+        <EditText
+            android:id="@+id/edtPhoneNumber1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_conponent"
+            android:drawableLeft="@drawable/phone_icon"
+            android:drawablePadding="10dp"
+            android:hint="Enter Mobile Number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:backgroundTint="#17ADA1"
+            android:maxLines="1"
+            android:paddingBottom="16sp"
+            android:textColorHint="@android:color/black"
+            android:textSize="14dp" />
+
+        <CheckedTextView
+            android:id="@+id/chkTxtRefralcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickFunction"
+            android:autoLink="web"
+            android:checked="false"
+            android:textColor="#17ADA1"
+            android:linksClickable="true"
+            android:text="@string/your_string"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginBottom="@dimen/margin_conponent"
+            />
+
+        <EditText
+            android:id="@+id/edtReferralcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_conponent"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="10dp"
+            android:hint="@string/your_refralcode"
+            android:inputType="textVisiblePassword"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/black"
+            android:textSize="14dp"
+            android:visibility="gone"
+            android:backgroundTint="#17ADA1"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Already Registered ? "
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_14sp" />
+
+            <TextView
+                android:id="@+id/txtLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_filter_state"
+                android:text="Login "
+                android:onClick="clickFunction"
+                android:textColor="#17ADA1"
+                android:textSize="@dimen/dimen_14sp"
+                />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:elevation="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/button_getotp"
+            android:gravity="center"
+            android:onClick="clickFunction"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_16sp"
+            />
+    </LinearLayout>
+</RelativeLayout>

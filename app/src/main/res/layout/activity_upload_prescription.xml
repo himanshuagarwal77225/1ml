@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Ui.LoginPanelActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnContinue"
+            android:layout_alignParentTop="true"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:shadowDx="0"
+                android:shadowDy="30"
+                android:shadowRadius="50">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="true"
+                    android:clipToPadding="true"
+                    android:dividerHeight="0.0px"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="@dimen/dimen_10dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:background="@color/white"
+                        android:weightSum=".75">
+
+                        <Button
+                            android:id="@+id/btnCamera"
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_weight=".25"
+                            android:background="@android:color/transparent"
+                            android:drawableTop="@drawable/ic_camera"
+                            android:drawableTint="@color/colorAccent"
+                            android:paddingTop="20dp"
+                            android:text="Camera"
+                            android:textAllCaps="false"
+                            android:textSize="14dp" />
+
+                        <Button
+                            android:id="@+id/btnGallery"
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_weight=".25"
+                            android:background="@android:color/transparent"
+                            android:drawableTop="@drawable/ic_image_gallery"
+                            android:drawableTint="@color/colorAccent"
+                            android:paddingTop="20dp"
+                            android:text="Gallery"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/dimen_14sp" />
+
+                        <Button
+                            android:id="@+id/btnPrescription"
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_weight=".25"
+                            android:background="@android:color/transparent"
+                            android:drawableTop="@drawable/ic_prescription"
+                            android:drawableTint="@color/colorAccent"
+                            android:paddingTop="20dp"
+                            android:text="Prescription"
+                            android:textAllCaps="false"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclePrescImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:background="@color/white" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                            android:drawableTint="@color/colorAccent"
+                            android:text="Why upload a prescription ?"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorblack"
+                            android:textSize="16dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/dimen_10dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:clickable="false" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="start"
+                                    android:padding="@dimen/dimen_10dp"
+                                    android:text="@string/oneline"
+                                    android:textColor="@color/colorblack"
+                                    android:textSize="@dimen/dimen_14sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:clickable="false" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="start"
+                                    android:padding="@dimen/dimen_10dp"
+                                    android:text="@string/second_line"
+                                    android:textColor="@color/colorblack"
+                                    android:textSize="@dimen/dimen_14sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:clickable="false" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="start"
+                                    android:padding="@dimen/dimen_10dp"
+                                    android:text="@string/third_line"
+                                    android:textColor="@color/colorblack"
+                                    android:textSize="@dimen/dimen_14sp" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:clickable="false" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="start"
+                                    android:padding="@dimen/dimen_10dp"
+                                    android:text="@string/four_line"
+                                    android:textColor="@color/colorblack"
+                                    android:textSize="@dimen/dimen_14sp" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <CheckBox
+                    android:id="@+id/terms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:background="@color/white"
+                    android:text="You have agree with terms &amp; Conditions" />
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="@dimen/dimen_10dp">
+                   <include layout="@layout/secuirt"/>
+               </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent"
+            android:text="Continue"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</LinearLayout>

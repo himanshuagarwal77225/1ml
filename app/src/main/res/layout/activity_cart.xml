@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackTrans"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="@color/colordiffblue"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="Cart">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Cart"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <ImageButton
+                    android:id="@+id/imgBtnSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/ic_filter_state"
+                    android:onClick="clickFunction"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_search_black_24dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <!--
+
+                        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:clickable="true"
+                            android:paddingRight="3dip">
+
+                            <ImageButton
+                                android:id="@+id/imgBtnNotif"
+                                android:src="@drawable/ic_notificationbell"
+                                android:layout_width="wrap_content"
+                                android:onClick="clickFunctionProductDetail"
+                                android:padding="10dp"
+                                android:background="@drawable/ic_filter_state"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/textNotif"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignRight="@id/imgBtnNotif"
+                                android:layout_alignTop="@id/imgBtnNotif"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/notification_circle"
+                                android:gravity="center"
+                                android:minHeight="15dp"
+                                android:minWidth="15dp"
+                                android:text="0"
+                                android:textColor="@color/whiteback"
+                                android:textSize="8sp" />
+                        </RelativeLayout>
+
+
+                        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/cartRelativeLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:clickable="true"
+                            android:paddingRight="3dip">
+
+                            <ImageButton
+                                android:id="@+id/imgBtnCart"
+                                android:src="@drawable/ic_cart"
+                                android:layout_width="wrap_content"
+                                android:onClick="clickFunctionProductDetail"
+                                android:padding="10dp"
+                                android:background="@drawable/ic_filter_state"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/textNotifycart"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignRight="@id/imgBtnCart"
+                                android:layout_alignTop="@id/imgBtnCart"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/notification_circle"
+                                android:gravity="center"
+                                android:minHeight="15dp"
+                                android:minWidth="15dp"
+                                android:text="0"
+                                android:textColor="@color/whiteback"
+                                android:textSize="8sp" />
+                        </RelativeLayout>
+            -->
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/layEmptyCart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cart"
+        android:gravity="bottom|center"
+        android:orientation="vertical"
+        android:paddingTop="100dp"
+        android:paddingBottom="150dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/dimen_10dp"
+            android:text="@string/your_cart_s_empty_n_set_back_add_product_in_cart"
+            android:textColor="@color/colorblack"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/dimen_10dp"
+            android:text="@string/look_like_you_haven_t_added_any_product_in_your_cart_yet"
+            android:textColor="@color/colorblack"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/shopnow"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:background="@drawable/upload_button"
+            android:backgroundTint="@color/active_yellow"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            android:text="Continue shopping"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layCart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ch"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclecartitem"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="10" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_rounded_button2"
+        android:gravity="center_horizontal|center_vertical"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/txtGrandTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:paddingLeft="5dp"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCheckout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:onClick="clickFunction"
+            android:text="Continue"
+            android:textColor="#ffffff" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Ui.LoginPanelActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackTrans"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:backgroundTint="@color/colordiffblue"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="Profile"
+                android:textColor="@color/whiteback"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imgBtnSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_filter_state"
+                    android:onClick="clickFunction"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_search_black_24dp" />
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/cartRelativeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:paddingRight="3dip">
+
+                    <ImageButton
+                        android:id="@+id/imgBtnCart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_filter_state"
+                        android:onClick="clickFunction"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/ic_cart" />
+
+                    <TextView
+                        android:id="@+id/textNotify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/imgBtnCart"
+                        android:layout_alignRight="@id/imgBtnCart"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/notification_circle"
+                        android:gravity="center"
+                        android:minWidth="15dp"
+                        android:minHeight="15dp"
+                        android:text="0"
+                        android:textColor="@color/whiteback"
+                        android:textSize="8sp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/colorAccent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/CimgivThumb"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:backgroundTint="@color/colorgray"
+                            android:onClick="clickFunction"
+                            android:src="@drawable/ic_user_defult"
+                            app:civ_border_color="@color/colorAccent"
+                            app:civ_border_width="2dp" />
+
+                        <!-- android:src="@mipmap/ic_launcher"-->
+                        <ImageView
+                            android:id="@+id/imgeditimage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignEnd="@+id/CimgivThumb"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/circle_shape"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:gravity="center"
+                            android:onClick="clickFunction"
+                            android:padding="@dimen/dimen_5dp"
+                            app:srcCompat="@drawable/ic_camera" />
+                        <!--android:background="@drawable/rounded_button_edit"-->
+                        <!--android:src="@drawable/ic_menu_camera"-->
+                        <!-- <ImageView
+                             android:id="@+id/imgEditPhoto"
+                             android:layout_width="wrap_content"
+                             android:gravity="center"
+                             android:layout_alignParentTop="true"
+                             android:layout_alignEnd="@+id/imgPhoto"
+                             android:layout_marginTop="10dp"
+                             android:layout_height="wrap_content"
+                             android:src="@drawable/ic_menu_camera"
+                         android:padding="5dp"
+                         android:background="@drawable/rounded_button_edit"
+                         />-->
+
+                        <!--   <android.support.design.widget.FloatingActionButton
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_alignParentTop="true"
+                               android:layout_alignEnd="@+id/imageview_account_profile"
+                               android:layout_marginTop="10dp"
+                               app:backgroundTint="#676767"
+                               android:padding="0dp"
+                               android:src="@drawable/ic_edit_black_24dp"
+                               android:id="@+id/floatingActionButton" />-->
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/txtusername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/whiteback"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/txtuserphone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/whiteback"
+                        android:textSize="15dp"
+                        android:visibility="gone" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtuseremail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/whiteback"
+                            android:textSize="15dp"
+                            android:visibility="gone" />
+
+                        <ImageButton
+                            android:id="@+id/imgBtnEdit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/ripple_category"
+                            android:backgroundTint="@color/colorAccent"
+                            android:onClick="clickFunction"
+                            android:padding="5dp"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/ic_edit" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <include layout="@layout/activity_edit_profile" />
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

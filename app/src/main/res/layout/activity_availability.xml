@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/availability_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:backgroundTint="@color/colordiffblue"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".75"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtUserLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_5dp"
+                        android:singleLine="true"
+                        android:text="Check Availability"
+                        android:textColor="@color/whiteback"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ic_arrow_down" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".25"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_filter_state"
+                        android:padding="10dp"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_search_black_24dp" />
+
+                    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="true"
+                        android:paddingRight="3dip">
+
+                        <ImageButton
+                            android:id="@+id/imgBtnNotif"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_filter_state"
+                            android:padding="10dp"
+                            app:srcCompat="@drawable/ic_notificationbell" />
+
+                        <TextView
+                            android:id="@+id/notification"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/imgBtnNotif"
+                            android:layout_alignRight="@id/imgBtnNotif"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/notification_circle"
+                            android:gravity="center"
+                            android:minWidth="15dp"
+                            android:minHeight="15dp"
+                            android:text="0"
+                            android:textColor="@color/whiteback"
+                            android:textSize="8sp" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/cartRelativeLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="true"
+                        android:paddingRight="3dip">
+
+                        <ImageButton
+                            android:id="@+id/imgBtnCart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_filter_state"
+                            android:padding="10dp"
+                            app:srcCompat="@drawable/ic_cart" />
+
+                        <TextView
+                            android:id="@+id/textNotify"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/imgBtnCart"
+                            android:layout_alignRight="@id/imgBtnCart"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/notification_circle"
+                            android:gravity="center"
+                            android:minWidth="15dp"
+                            android:minHeight="15dp"
+                            android:text="0"
+                            android:textColor="@color/whiteback"
+                            android:textSize="8sp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="15dp"
+            android:text="Please enter your pincode and check availability of service in your area." />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:weightSum="10.0">
+            <EditText
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/edt_pincode"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:layout_width="wrap_content"
+                android:layout_height="59dp"
+                android:hint="  Enter pincode   "
+                android:maxLength="6"
+                android:digits="\ 0123456789"
+                android:layout_weight="4.0"
+                android:inputType="number" />
+            <ImageView
+                android:id="@+id/btn_checkavailability"
+                android:background="@color/colorAccent"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_width="0.0dip"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:text=""
+                android:layout_weight="2.0"
+                app:srcCompat="@drawable/ic_arrow_forward_black_16dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/llStatus"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+            <TextView
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/txt_Availabity_status"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="Service Available" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/linbooktest"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="20sp"
+                android:id="@+id/txtbooktestheader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go ahead and avail our service."
+                android:layout_centerInParent="true" />
+            <Button
+                android:textSize="13sp"
+                android:id="@+id/btnbookTests"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/white"
+                android:background="@color/colorAccent"
+                android:paddingRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="BOOK TESTS"
+                android:layout_alignParentBottom="true" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

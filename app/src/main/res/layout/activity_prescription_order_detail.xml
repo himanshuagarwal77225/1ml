@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Ui.LoginPanelActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+        <LinearLayout
+            android:layout_weight="9.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#e4e2e2"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:backgroundTint="@color/colordiffblue"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/whiteback"
+                    android:textSize="20dp"
+                    android:text="Prescription Detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </androidx.appcompat.widget.Toolbar>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            app:cardCornerRadius="5dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                               android:padding="@dimen/dimen_10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:textSize="15dp"
+                                    android:gravity="left"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="@color/colorblack"
+                                    android:text="Delivery Address"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@color/colorgray"
+                                    />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/txtname"
+                                        android:textSize="14dp"
+                                        android:gravity="left"
+                                        android:layout_gravity="center_vertical"
+                                        android:textColor="@color/colorblack"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:background="#e1dfdf"
+                                        android:id="@+id/txtaddresstype"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/dimen_10dp"/>
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/txtdeliveryaddress"
+                                    android:textSize="14dp"
+                                    android:gravity="left"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="@color/colorblack"
+                                    android:text="Delivery Address sad asdf asdf asdf asfd asdfa asdf asdf asdfasd asdf asfd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            app:cardCornerRadius="5dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="@dimen/dimen_10dp"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txtOptionSelected"
+                                    android:textSize="15dp"
+                                    android:gravity="left"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="@color/colorblack"
+                                    android:text=""
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <TextView
+                                    android:id="@+id/txtselectedOptionDetail"
+                                    android:textSize="14dp"
+                                    android:gravity="left"
+                                    android:textStyle="bold"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="@color/colorblack"
+                                    android:text="Selected options"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            app:cardCornerRadius="5dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:padding="@dimen/dimen_10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:textSize="15dp"
+                                    android:gravity="left"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="@color/colorblack"
+                                    android:text="Selected Store"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@color/colorgray"
+                                    />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:id="@+id/txtVenderList"
+                                        android:textSize="14dp"
+                                        android:gravity="left"
+                                        android:layout_gravity="center_vertical"
+                                        android:textColor="@color/colorblack"
+                                        android:text="Selected options"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            app:cardCornerRadius="5dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:padding="@dimen/dimen_10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:textSize="15dp"
+                                    android:gravity="left"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="@color/colorblack"
+                                    android:text="Selected Prescription"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@color/colorgray"
+                                    />
+
+                                <HorizontalScrollView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:id="@+id/layPrescImage"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+                                    </LinearLayout>
+                                </HorizontalScrollView>
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </ScrollView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnConfirmOrder"
+        android:textAllCaps="false"
+        android:textSize="@dimen/dimen_16dp"
+        android:text="Confirm Order"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:textColor="@color/whiteback"
+        android:layout_height="@dimen/dimen_50dp"
+        android:onClick="clickFunction"
+        />
+
+</FrameLayout>

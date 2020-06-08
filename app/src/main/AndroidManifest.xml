@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.medical.product"
+    >
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="com.javapapers.currentlocationinmap.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <protected-broadcast android:name="com.motorola.motocare.INTENT_TRIGGER" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <application
+        android:name=".helpingFile.DroiderApplication"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="P"
+        tools:replace="android:usesCleartextTraffic,android:allowBackup"
+        android:allowBackup="true">
+        <activity
+            android:name=".Ui.Deeplink"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "http://www.example.com/gizmos” -->
+                <data android:scheme="http"
+                    android:host="www.1ml.co.in"
+                    android:pathPrefix="/product/" />
+                <data android:scheme="https" android:host="www.1ml.co.in" />
+                <!-- note that the leading "/" is required for pathPrefix-->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Ui.Artical"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ui.Artical_view"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ui.Medican_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ui.Precption_requested_order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ui.Product_vendor"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ui.Reminder_view"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ui.Coming_soon"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ui.Filetr_selector"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ui.No_internet"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ui.Vendor_profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ui.Accepts_orders"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ui.Feedbacks"
+            android:label="Feedbacks"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Ui.handle_notification">
+            <intent-filter>
+                <action android:name="handle_notification" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Ui.Thankyouorder"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ui.Full_image"
+            android:screenOrientation="portrait" />
+
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="true" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel"
+            android:value="@string/default_notification_channel_id" />
+
+        <activity
+            android:name=".Ui.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".helpingFile.NetworkChangeReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+            </intent-filter>
+
+        </receiver>
+
+        <activity
+            android:name=".Ui.LoginPanelActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="example.com"
+                    android:scheme="http" />
+                <data
+                    android:host="example.com"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Ui.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ui.MyOrderDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ui.Dashbord"
+            android:label="@string/title_activity_dashbord"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ui.SignupPanelActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ui.ProductCategory"
+            android:label="@string/title_activity_dashbord"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ui.Product_detailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ui.CartActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ui.LabCartActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ui.ReferAndEarnActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="example.com"
+                    android:scheme="http" />
+                <data
+                    android:host="example.com"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity> <!-- Firebase start -->
+        <service
+            android:name=".helpingFile.FCMMessagingService"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".helpingFile.FCMInstanceIDService"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".Ui.UserContactsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ui.PillReminderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ui.ReminderAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ui.ReminderEditActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ui.LicencesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ui.SearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <receiver android:name=".Ui.AlarmReceiver" />
+
+        <activity
+            android:name=".Ui.EditProfileActivity"
+            android:label="Edit Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ui.CheckoutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ui.PaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ui.All_CategoryActivity"
+            android:label="All Category"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ui.OtpPanelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ui.MyOrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ui.SearchProductActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <receiver android:name=".Ui.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Ui.MapsNearStoreActivity"
+            android:label="@string/title_activity_maps_near_store"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ui.UploadDocumentActivity"
+            android:label="Upload Document"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ui.AddNew_Update_AddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ui.MyAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ui.AddFamilyMamberActivity"
+            android:label="Add Family Member"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ui.FilterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ui.SearchProductListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ui.Productvendors"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ui.ActivityPayuMoney"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ui.MyWishList"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ui.Family_Mamber_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ui.UploadFamilyDocument"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ui.ImageFullScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ui.LoginUserDocument"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ui.UploadMyDocument"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ui.MyNotificationActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ui.UploadPrescriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ui.SelectPrescription"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ui.MainActivitynew"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ui.OrderPrescriptionInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ui.SelectAddressPrescriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ui.SelectVenders"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ui.Nearest_vendor"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ui.OrderPrescriptionDetailActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ui.OrderPrescriptionThankyouActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ui.Order_Tab_Activity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Ui.LabTestMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Ui.ProductActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Ui.ViewAll"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Ui.Add_Beneficiary"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Ui.SearchActivity1"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Ui.Availability"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Ui.Select_beneficiary"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Ui.LabTestAddress"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Ui.LabTestReport"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Ui.SlotActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Ui.LabCheckOut"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Ui.Accreditation"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Ui.BloodBankListFragment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+
+            />
+<activity android:name=".Ui.DocsWebview"
+    android:screenOrientation="portrait"
+    android:theme="@style/AppTheme.NoActionBar"/>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_EembcnXI4E7Whz"
+            />
+    </application>
+
+</manifest>

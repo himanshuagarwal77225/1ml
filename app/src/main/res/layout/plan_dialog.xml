@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test Plan"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Monthly to get additional 40% discount on your monthly tests for 1 year"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/governement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Quaterly to get additional 30% discount on your quaterly tests for 1 year"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/black"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select HalfYearly to get additional 20% discount on your Halfyearly tests for 1 year"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Annually to get additional 10% discount on your Annually tests for 1 year"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="**If you select this option then your test will be taken at home on a selected schedule"
+            android:textSize="12sp"
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#17b7c8</color>
+    <color name="colorPrimaryDark">#17b7c8</color>
+    <color name="colorAccent">#17b7c8</color>-->
+    <color name="colorPrimary">#18ADA1</color>
+    <color name="colorPrimaryDark">#18ADA1</color>
+    <color name="colorAccent">#18ADA1</color>
+
+   <!-- <color name="colorBackTrans">#1917b7c8</color>-->
+    <color name="colorBackTrans">#1918ADA1</color>
+
+    <color name="whiteback">#FCFCFC</color>
+
+    <color name="colorgray">#a3a2a2</color>
+   <!-- <color name="colordiffblue">#17b7c8</color>-->
+    <color name="colordiffblue">#18ADA1</color>
+    <color name="colorblack">#0C090A</color>
+    <color name="colorred">#FFC74A0B</color>
+    <color name="green">#06b95f</color>
+
+    <color name="app_button_color">#D81B60</color>
+    <color name="dark_gray">#e1e0e0</color>
+
+
+    <color name="black">#ff000000</color>
+    <color name="blue">#ff002fb5</color>
+    <color name="button_text">#ffffffff</color>
+    <color name="cb_background">#fff6f6f6</color>
+    <color name="cb_blue_button">#ff368ecd</color>
+    <color name="cb_blue_button_light">#ff368ecf</color>
+    <color name="cb_border">#ffd4dee2</color>
+    <color name="cb_dark_blue_button">#ff094774</color>
+    <color name="cb_dark_grey">#ff464646</color>
+    <color name="cb_errorRed">#ffe40000</color>
+    <color name="cb_grey">#ffe9e7e7</color>
+    <color name="cb_input_gray">#ffdee6e6</color>
+    <color name="cb_nb_background">#ff3a3434</color>
+    <color name="cb_nb_button">#ff615c5c</color>
+    <color name="cb_otpColor">#ff368ecd</color>
+    <color name="cb_otpDisabledColor">#ff7d88b3</color>
+    <color name="cb_otpDisabledTextColor">#ffbec4d9</color>
+    <color name="cb_otpReceivedColor">#ff769b12</color>
+    <color name="cb_payu_blue">#ff368ecd</color>
+    <color name="cb_textColor">#ff8f8d8d</color>
+    <color name="common_google_signin_btn_text_dark_default">@android:color/white</color>
+    <color name="common_google_signin_btn_text_dark_disabled">#1f000000</color>
+    <color name="common_google_signin_btn_text_dark_focused">@android:color/black</color>
+    <color name="common_google_signin_btn_text_dark_pressed">@android:color/white</color>
+    <color name="common_google_signin_btn_text_light_default">#90000000</color>
+    <color name="common_google_signin_btn_text_light_disabled">#1f000000</color>
+    <color name="common_google_signin_btn_text_light_focused">#90000000</color>
+    <color name="common_google_signin_btn_text_light_pressed">#de000000</color>
+    <color name="default_circle_indicator_fill_color">#ffffffff</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <color name="default_circle_indicator_stroke_color">#ffdddddd</color>
+    <color name="default_progress_background">#ffcccccc</color>
+    <color name="div_color">#ffcccccc</color>
+    <color name="orange">#ffff8e5c</color>
+    <color name="payu_blue">#ff368ecd</color>
+    <color name="place_autocomplete_prediction_primary_text">#ff212121</color>
+    <color name="place_autocomplete_prediction_primary_text_highlight">#ff757575</color>
+    <color name="place_autocomplete_prediction_secondary_text">#ff757575</color>
+    <color name="place_autocomplete_search_hint">#ffbdbdbd</color>
+    <color name="place_autocomplete_search_text">#ff212121</color>
+    <color name="place_autocomplete_separator">#1f000000</color>
+    <color name="red">#fff1472d</color>
+    <color name="secondary_color">#ff444444</color>
+    <color name="tertiary_color">#ff747474</color>
+    <color name="trans_black">#99000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffffff</color>
+
+</resources>
